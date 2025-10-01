@@ -39,7 +39,6 @@ public class TreeProblems {
     return setA;
   }
 
-
   /**
    * Method removeEven()
    *
@@ -50,8 +49,8 @@ public class TreeProblems {
   public static void removeEven(Map<Integer, String> treeMap) {
 
     // INSERT CODE HERE.
-    Set<Integer> keysToRemove = new TreeSet<>(treeMap.keySet());
-    for (Integer key : keysToRemove) {
+    Set<Integer> remove = new TreeSet<>(treeMap.keySet());
+    for (Integer key : remove) {
       if (key % 2 == 0) {
         treeMap.remove(key);
       }
@@ -59,8 +58,6 @@ public class TreeProblems {
   
     return;
   }
-
-
 
   /**
    * Method treesEqual()
