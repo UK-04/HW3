@@ -407,7 +407,8 @@ class LUC_AVLTree {
         // Get the balance factor of this node (to check whether this node became unbalanced)
         int balance = getBalanceFactor(node);
 
-        // If this node becomes unbalanced, then there are 4 cases
+        
+        // if nodes are unbalanced
 
         // LL Case
         if (balance > 1 && getBalanceFactor(node.leftChild) >= 0) {
